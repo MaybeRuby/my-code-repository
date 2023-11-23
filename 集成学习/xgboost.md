@@ -1,5 +1,5 @@
 单独解释一下
-```
+```Python
 model = xgb.XGBClassifier(objective='binary:logistic', colsample_bytree=0.7, learning_rate=0.1,
                 max_depth=5, alpha=1, n_estimators=15)
 ```
@@ -25,7 +25,7 @@ model = xgb.XGBClassifier(objective='binary:logistic', colsample_bytree=0.7, lea
 * scale_pos_weight (float, optional, default=1):在类别不平衡问题中，控制正负权重的平衡。
 * n_jobs (int, optional, default=-1):并行线程数，用于拟合和预测。默认值 -1 表示使用所有可用的 CPU 核心。
 
-```
+```Python
 import pandas as pd
 import numpy as np
 import xgboost as xgb
