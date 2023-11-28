@@ -1,4 +1,4 @@
-来源：https://zhuanlan.zhihu.com/p/78777407
+来源：[【lightgbm/xgboost/nn代码整理二】xgboost做二分类，多分类以及回归任务](https://zhuanlan.zhihu.com/p/78777407)
 ## 简单的数据处理
 
 ```Python
@@ -119,3 +119,9 @@ plt.savefig('../../result/xgb_importances.png')
 cols = (feature_importance_df[["Feature", "importance"]].groupby("Feature").mean()
         .sort_values(by="importance", ascending=False)[:5].index)
 ```
+
+## 总结
+
+xgboost和lightgbm对比，它的速度会慢很多，使用也没有lighgbm方便，但是可以将xgboost训练的结果和lightgbm做融合，提升最终的结果。
+
+代码地址：[data_mining_models](https://github.com/QLMX/data_mining_models)
